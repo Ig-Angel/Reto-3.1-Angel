@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] !== "POST") {
     http_response_code(405);
     $json['message'] = 'Sólo se permite el método POST.';
 } else {
-    // CAMBIO 2: Validación de datos
+      // CAMBIO 2: Validación de datos
     if (!empty($_POST['nombre']) && !empty($_POST['email'])) {
         
         $clientes = new ClientesBD();
